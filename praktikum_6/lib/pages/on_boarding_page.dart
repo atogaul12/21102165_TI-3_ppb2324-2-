@@ -68,7 +68,7 @@ class OnBoardingPage extends StatelessWidget {
                         ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(
-                            Radius.circular(10),
+                            const Radius.circular(10),
                           ),
                         ),
                       ),

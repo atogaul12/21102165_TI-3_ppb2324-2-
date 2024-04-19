@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum_6/pages/home/home_page.dart';
+import 'package:praktikum_6/pages/portofolio/portofolio_page.dart';
+import 'package:praktikum_6/pages/profile/profile_page.dart';
+import 'package:praktikum_6/pages/support/support_page.dart';
 import 'package:praktikum_6/styles/colors.dart';
 import 'package:praktikum_6/styles/text_styles.dart';
-
-import 'home/home_page.dart';
-import 'portofolio/portofolio_page.dart';
-import 'profile/profile_page.dart';
-import 'support/support_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -44,9 +43,13 @@ class _MainPageState extends State<MainPage> {
     return Container(
       height: 80,
       decoration: BoxDecoration(
-          color: kWhite,
           borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
-          boxShadow: [BoxShadow(color: kGrey, blurRadius: 10)]),
+          boxShadow: [
+            BoxShadow(
+              color: kGrey,
+              blurRadius: 10,
+            )
+          ]),
       child: ClipRRect(
         borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
         child: BottomNavigationBar(
@@ -74,14 +77,14 @@ class _MainPageState extends State<MainPage> {
                 label: 'Portofolio'),
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  'assets/icons/support.png',
+                  'assets/icons/Support.png',
                   width: 24,
                   color: _selectedIndex == 2 ? kBlueRibbon : kDarkGray,
                 ),
                 label: 'Support'),
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  'assets/icons/profile.png',
+                  'assets/icons/Profile.png',
                   width: 24,
                   color: _selectedIndex == 3 ? kBlueRibbon : kDarkGray,
                 ),
