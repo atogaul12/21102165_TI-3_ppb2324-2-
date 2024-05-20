@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color kBgColor = Color(0xFFFADC8FF);
+const Color kBgColor = Color.fromARGB(246, 173, 200, 255);
 const Color kBlueRibbon = Color(0xFF3366FF);
 const Color kNightBlack = Color(0xFF2C2C2C);
 const Color kBlack = Color(0xFF000000);
